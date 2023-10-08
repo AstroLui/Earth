@@ -1,0 +1,8 @@
+
+.Earth{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: url(./assents/Earth.png);
+    background-repeat: no-repeat;
+}
