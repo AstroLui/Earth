@@ -14,12 +14,12 @@ body{
     width: fit-content;
     top: 50%;
     left: 50%;
-    transform: translate(-90%, 50%);
+    transform: translate(-95%, 40%);
     position: relative;
 }
 .Earth{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     background-image: url(./assents/Earth.png);
     background-position-x: -100px;
@@ -32,12 +32,13 @@ body{
     
 }
 .ShadowEarth{
-    width: 400px;
+    width: 500px;
     height: 35px;
     box-shadow: inset 0 0 20px 20px rgba(3, 25, 37, 0.7);
     border-radius: 50%;
     position: absolute;
-    top: 366px;
+    top: 500px;
+    left: 5px;
     z-index: -1;
 }
 .ping{
@@ -46,29 +47,24 @@ body{
     background-color: red;
     border-radius: 100%;
     position: absolute;
-    top: 39%;
-    left: 49%;
-    cursor: pointer;
+    top: 31%;
+    left: 40%;
     position: relative;
     transition: top 1s ease-in-out, left 1s ease-in-out;
 }
 
 .country{
-    color: transparent;
+    color:black;
     position: absolute;
     top:-22px;
     font-size: 23px;
-    transition: color 0.5s ease-in-out;
 }
-
 .move{
     display: none;
 }
-
 .active{
-    color: black;
+    color: transparent;
 }
-
 .Nav-aside{
     position: absolute;
     display: flex;
@@ -79,7 +75,7 @@ body{
     top: 100px;
     left: 150px;
     background-color: white;
-    transition: height 0.5s ease-in-out;
+    transition: height 0.5s ease;
     overflow: hidden;
 }
 
@@ -94,10 +90,10 @@ body{
     padding-left: 10px;
     align-items: center;
     width: 95%;
-    height: 40px;
+    height: 50px;
     margin: 10px 0 10px 10px;
     border-radius: 20px;
-    transition: background 0.5s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 .country-S.container{
     cursor: pointer;
@@ -108,6 +104,7 @@ body{
     background-color: lightgray
 }
 .C-Select{
+    width: 80px;
     font-size: 20px
 }
 .Icon-Select{
@@ -134,11 +131,57 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 0.5s ease, opacity 0.2s ease;
 
 }
+
 .lines:nth-child(1){
     top:25%;
 }
 .lines:nth-child(3){
     top:75%;
+}
+
+.lines.activel:nth-child(1){
+    top:35%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(45deg);
+}
+.lines.activel:nth-child(2){
+    top:35%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(-45deg);
+}   
+.lines.activel:nth-child(3){
+    opacity: 0;
+}
+.Content-Container{
+    display: flex;
+    width: 700px;
+    height: 800px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 1100px;
+    border-radius: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;   
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.inSide{
+    opacity: 1;
+}
+
+.Content-Container::-webkit-scrollbar{
+    width: 10px;
+}
+.Content-Container::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
 }
