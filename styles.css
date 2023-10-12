@@ -70,11 +70,11 @@ body{
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     height: 60px;
     border-radius: 30px;
     top: 100px;
-    left: 150px;
+    left: 50px;
     background-color: white;
     transition: height 0.25s ease-in;
     overflow: hidden;
@@ -105,7 +105,7 @@ body{
     background-color: lightgray
 }
 .C-Select{
-    width: 80px;
+    width: 140px;
     font-size: 20px
 }
 .Icon-Select{
@@ -221,7 +221,7 @@ body{
 .Content-Flag{
     position: absolute;
     opacity: 0;
-    top: 250px;
+    top: 200px;
     left: 30px;
     width: 400px;
     height: 250px;
