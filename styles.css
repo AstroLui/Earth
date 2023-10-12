@@ -9,9 +9,10 @@ body{
     background: rgb(29,1,43);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(22,40,136,1) 100%);
     position: relative;
+    background-repeat: no-repeat;
 }
 .Wrapper{
-    width: fit-content;
+    width: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-95%, 40%);
@@ -57,7 +58,7 @@ body{
     color:black;
     position: absolute;
     top:-22px;
-    font-size: 23px;
+    font-size: 18px;
 }
 .move{
     display: none;
@@ -75,7 +76,7 @@ body{
     top: 100px;
     left: 150px;
     background-color: white;
-    transition: height 0.5s ease;
+    transition: height 0.25s ease-in;
     overflow: hidden;
 }
 
@@ -120,6 +121,8 @@ body{
     border-radius: 10px;
     cursor: pointer;
     margin-left: 100px;
+    opacity: 1;
+    transition: opacity 0.5s ease;;
 }
 
 .lines{
@@ -134,7 +137,6 @@ body{
     transition: transform 0.5s ease, opacity 0.2s ease;
 
 }
-
 .lines:nth-child(1){
     top:25%;
 }
@@ -157,6 +159,36 @@ body{
 .lines.activel:nth-child(3){
     opacity: 0;
 }
+.loader-container{
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    margin-left: 110px;
+}
+.loader{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    background-color: transparent;
+    border: 4px solid transparent;
+    border-top-color: black;
+    border-left-color: black;
+    border-radius: 50%;
+    animation: loade 0.5s linear infinite;
+}
+@keyframes loade {
+    0%{
+        transform: 
+            rotate(0deg);
+    }
+
+    100%{
+        transform: 
+            rotate(360deg);
+    }
+}
 .Content-Container{
     display: flex;
     width: 700px;
@@ -172,7 +204,7 @@ body{
     overflow-y: auto;
     scroll-behavior: smooth;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
 }
 .inSide{
     opacity: 1;
@@ -184,4 +216,16 @@ body{
 .Content-Container::-webkit-scrollbar-thumb{
     background-color: black;
     border-radius: 5px;
+}
+
+.Content-Flag{
+    position: absolute;
+    opacity: 0;
+    top: 250px;
+    left: 30px;
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+    z-index: -2;
+    transition: opacity 1s ease;
 }
