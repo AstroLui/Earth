@@ -191,6 +191,8 @@ body{
 }
 .Content-Container{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 700px;
     height: 800px;
     background-color: white;
@@ -214,7 +216,7 @@ body{
     width: 10px;
 }
 .Content-Container::-webkit-scrollbar-thumb{
-    background-color: black;
+    background-color: gray;
     border-radius: 5px;
 }
 
