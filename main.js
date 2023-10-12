@@ -10,12 +10,12 @@ const country =
         }
     },
     {
-        "pais" : "Colombia",
-        "icon" : "./assents/Icons Flag/colombia.png",
-        "bandera": "",
+        "pais" : "Egipto",
+        "icon" : "./assents/Icons Flag/egypt.png",
+        "bandera": "./assents/Flags/Egipto.jpeg",
         "coordenada": {
-            "x" : "-80px",
-            "y" : "-65px"
+            "x" : "-352px",
+            "y" : "-6px"
         }
     },
     {
@@ -55,16 +55,16 @@ const country =
         }
     },
     {
-        "pais" : "Mexico",
-        "icon" : "./assents/Icons Flag/flag (1).png",
+        "pais" : "Nueva Guinea",
+        "icon" : "./assents/Icons Flag/new.png",
         "bandera": "",
         "coordenada": {
-            "x" : "0px",
-            "y" : "-15px"
+            "x" : "-650px",
+            "y" : "-95px"
         }
     },
     {
-        "pais" : "Surafrica",
+        "pais" : "Sudafrica",
         "icon" : "./assents/Icons Flag/south-africa.png",
         "bandera": "",
         "coordenada": {
@@ -82,8 +82,8 @@ const country =
         }
     },
     {
-        "pais" : "India",
-        "icon" : "./assents/Icons Flag/flag.png",
+        "pais" : "Turquia",
+        "icon" : "./assents/Icons Flag/turkey.png",
         "bandera": "",
         "coordenada": {
             "x" : "-485px",
@@ -91,8 +91,8 @@ const country =
         }
     },
     {
-        "pais" : "Marruecos",
-        "icon" : "./assents/Icons Flag/morocco.png",
+        "pais" : "Australia",
+        "icon" : "./assents/Icons Flag/australia.png",
         "bandera": "",
         "coordenada": {
             "x" : "-265px",
@@ -127,7 +127,18 @@ Country.forEach( element =>{
         document.getElementById('Earth').style.backgroundPositionY = country[pos].coordenada.y
         document.getElementById('ping').classList.remove('move')
         document.getElementById('country').innerHTML= country[pos].pais   
-        setTimeout(inSide, 500)
+        document.getElementById('line').style.display = 'none'
+        document.getElementById('loader-container').style.display = 'inline'
+        document.getElementById('Content-Container').classList.add("inSide")
+        document.getElementById('Content-Flag').style.opacity = '1'
+        document.getElementById('Content-Flag').style.background= `url(${country[1].bandera})`
+        document.getElementById('Content-Flag').style.backgroundSize= 'cover'
+        setTimeout(()=>{
+            document.getElementById('line').style.display = 'inline'
+            document.getElementById('loader-container').style.display = 'none'
+            document.getElementById('Content-Container').classList.remove("inSide")
+            document.getElementById('Content-Flag').style.opacity = '0'
+        }, 10000)
     })
 })
     
