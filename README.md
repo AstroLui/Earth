@@ -1,7 +1,4 @@
-<h1>
-    Earth
-<h1>
-
+# Earth 
 ## Flexeando
 Para un podo de `flexeo` os muestro esto:    
 ![Racha en Github](https://streak-stats.demolab.com/?user=AstroLui&theme=transparent&hide_border=true&border_radius=10&stroke=333333)
