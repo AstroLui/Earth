@@ -132,7 +132,7 @@ body{
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 210px;
+    margin-left: 220px;
     opacity: 1;
     transition: opacity 0.5s ease;;
 }
@@ -176,7 +176,7 @@ body{
     position: relative;
     width: 50px;
     height: 40px;
-    margin-left: 220px;
+    margin-left: 225px;
 }
 .loader{
     width: 30px;
@@ -251,8 +251,8 @@ body{
 .Content-Flag{
     position: absolute;
     opacity: 0;
-    top: 200px;
-    left: 30px;
+    top: 260px;
+    left: 60px;
     width: 400px;
     height: 250px;
     border-radius: 30px;
