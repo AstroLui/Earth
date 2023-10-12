@@ -95,8 +95,8 @@ const country =
         "icon" : "./assents/Icons Flag/australia.png",
         "bandera": "",
         "coordenada": {
-            "x" : "-265px",
-            "y" : "5px"
+            "x" : "-630px",
+            "y" : "-145px"
         }
     }
 ];
