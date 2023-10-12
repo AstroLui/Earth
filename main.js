@@ -140,7 +140,26 @@ Country.forEach( element =>{
             document.getElementById('Content-Container').classList.remove("inSide")
             document.getElementById('Content-Flag').style.opacity = '0'
             document.getElementById('Content-Container').innerHTML = ''
-        }, 10000)
+            Country.forEach(element =>{
+                if(element.children[0].classList[2] == '0' ){
+                    const Select = document.getElementById('Country-S').children
+                    var posS = parseInt(Select[0].classList.item(1))
+                    Select[0].setAttribute('src', country[0].icon)
+                    Select[1].innerHTML = country[0].pais
+                    Select[0].classList.remove(Select[0].classList.item(1))
+                    Select[0].classList.add(element.children[0].classList.item(2))
+                    element.children[0].setAttribute('src', country[posS].icon)
+                    element.children[1].innerHTML = country[posS].pais
+                    element.children[0].classList.remove(element.children[0].classList.item(2))
+                    element.children[0].classList.add(`${posS}`)
+                    document.getElementById('ping').classList.add('move')
+                    document.getElementById('Earth').style.backgroundPositionX = country[0].coordenada.x
+                    document.getElementById('Earth').style.backgroundPositionY = country[0].coordenada.y
+                    document.getElementById('country').innerHTML= country[0].pais   
+                    document.getElementById('ping').classList.remove('move')
+                }
+            })
+        }, 50000)
     })
 })
     
@@ -223,7 +242,7 @@ function InfoVerifc(pais){
     }else if(pais == 'Francia'){
         return `
         <h1>Francia</h1>
-        <p>es un país soberano que se extiende por Europa Occidental y por regiones y territorios de ultramar en América y los océanos Atlántico, Pacífico e Índico. Es uno de los veintisiete Estados soberanos que integran la Unión Europea. Su área metropolitana se extiende desde el río Rin hasta el océano Atlántico y desde el mar Mediterráneo hasta el canal de la Mancha y el mar del Norte; 
+        <p>Es un país soberano que se extiende por Europa Occidental y por regiones y territorios de ultramar en América y los océanos Atlántico, Pacífico e Índico. Es uno de los veintisiete Estados soberanos que integran la Unión Europea. Su área metropolitana se extiende desde el río Rin hasta el océano Atlántico y desde el mar Mediterráneo hasta el canal de la Mancha y el mar del Norte; 
         los territorios de ultramar incluyen la Guayana Francesa en América del Sur, San Pedro y Miquelón en el Atlántico Norte, las Antillas francesas y muchas islas en Oceanía y el océano Índico.</p><p>Debido a sus diversos territorios costeros, Francia posee la mayor zona económica exclusiva del mundo.  
         Sus dieciocho regiones integrales (cinco de las cuales son de ultramar) abarcan una superficie combinada de 643 801 km2 y más de 68 millones de personas. Culturalmente pertenece a la Europa latina. Francia es una república semipresidencialista unitaria con capital en París, la mayor ciudad del país y principal centro cultural y comercial; otras zonas urbanas importantes son Marsella, Lyon, Toulouse, Lille, Burdeos, Montpellier y Niza.</p>
         <h2>Ubicacion Geografica</h2>
