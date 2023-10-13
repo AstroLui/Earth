@@ -12,7 +12,6 @@ body{
     background: rgb(29,1,43);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(22,40,136,1) 100%);
     position: relative;
-    background-repeat: no-repeat;
     font-family: 'Onest', Verdana, Geneva, Tahoma, sans-serif;
 }
 .Wrapper{
@@ -303,3 +302,79 @@ body{
     border-radius: 30px;
     background-color: white;
 }   
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    body{
+        width: auto;
+        height: auto;
+        min-width: none;
+    }
+    .Wrapper{
+        top: 50px;
+        left: 400px;
+        transform: scale(0.8);
+    }
+    .W-active{
+        left: 265px;
+        transform: scale(0.65);
+    }
+    .Nav-aside{
+        width: 380px;
+        height: 60px;
+        top: 50px;
+    }
+    .C-Select{
+        font-size: 17px;
+    }
+    .Icon-Select{
+        width: 20px;
+        height: 20px;
+    }
+    .line{
+        margin-left: 110px;
+    }
+    .loader-container{
+        margin-left: 115px;
+    }
+    .Content-Flag span{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        top: -50px;
+        left: 60px;        
+    }
+    .Content-Flag{
+        top: 200px;
+        width: 250px;
+        height: 150px;
+        background-size: contain;
+    }
+    .C-Content-Flag{
+        top: 450px;
+        width: 250px;
+        height: 150px;
+        background-size: contain;
+    }
+    .C-Content-Flag span{
+        width: 130px;
+        height: 30px;
+        font-size: 10px;
+        top: -50px;
+        left: 50px;        
+    }
+    .Content-Container{
+        left: 750px;
+        top: 50px;
+        width: 500px;
+        height: 560px;
+    }
+    .Content-Container h1, .Content-Container h2{ 
+       font-size: 25px;
+    }
+    .Content-Container p{
+        font-size: 13px;
+    }
+    .Content-Container li{
+       font-size: 13px;
+    }
+}
