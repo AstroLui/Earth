@@ -301,8 +301,7 @@ body{
     font-weight: bold;
     border-radius: 30px;
     background-color: white;
-}   
-
+} 
 @media screen and (min-width: 1024px) and (max-width: 1440px){
     body{
         width: auto;
