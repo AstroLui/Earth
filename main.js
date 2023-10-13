@@ -13,6 +13,7 @@ const country =
         "pais" : "Egipto",
         "icon" : "./assents/Icons Flag/egypt.png",
         "bandera": "./assents/Flags/Egipto.jpeg",
+        "capital":"./assents/C-Flags/C-Egipto.jpeg",
         "coordenada": {
             "x" : "-352px",
             "y" : "-6px"
@@ -22,6 +23,7 @@ const country =
         "pais" : "Francia",
         "icon" : "./assents/Icons Flag/france.png",
         "bandera": "./assents/Flags/francia.png",
+        "capital":"./assents/C-Flags/C-Francia.png",
         "coordenada": {
             "x" : "-280px",
             "y" : "48px"
@@ -31,6 +33,7 @@ const country =
         "pais" : "China",
         "icon" : "./assents/Icons Flag/china.png",
         "bandera": "./assents/Flags/China.png",
+        "capital":"./assents/C-Flags/C-china.png",
         "coordenada": {
             "x" : "-548px",
             "y" : "20px"
@@ -40,6 +43,7 @@ const country =
         "pais" : "Estados Unidos",
         "icon" : "./assents/Icons Flag/united-states.png",
         "bandera": "./assents/Flags/EstadosU.png",
+        "capital":"./assents/C-Flags/C-EEUU.png",
         "coordenada": {
             "x" : "5px",
             "y" : "15px"
@@ -49,6 +53,7 @@ const country =
         "pais" : "Alemania",
         "icon" : "./assents/Icons Flag/germany.png",
         "bandera": "./assents/Flags/Alemania.jpeg",
+        "capital":"./assents/C-Flags/C-berlin.png",
         "coordenada": {
             "x" : "-305px",
             "y" : "54px"
@@ -58,6 +63,7 @@ const country =
         "pais" : "Nueva Guinea",
         "icon" : "./assents/Icons Flag/new.png",
         "bandera": "./assents/Flags/NuevaG.png",
+        "capital":"./assents/C-Flags/C-NuevaGuinea.png",
         "coordenada": {
             "x" : "-650px",
             "y" : "-95px"
@@ -67,6 +73,7 @@ const country =
         "pais" : "Sudáfrica",
         "icon" : "./assents/Icons Flag/south-africa.png",
         "bandera": "./assents/Flags/Sudafrica.png",
+        "capital":"./assents/C-Flags/C-sudafrica.png",
         "coordenada": {
             "x" : "-335px",
             "y" : "-150px"
@@ -76,6 +83,7 @@ const country =
         "pais" : "Brazil",
         "icon" : "./assents/Icons Flag/brazil-.png",
         "bandera": "./assents/Flags/Brazil.png",
+        "capital":"./assents/C-Flags/C-brazil.png",
         "coordenada": {
             "x" : "-135px",
             "y" : "-95px"
@@ -85,6 +93,7 @@ const country =
         "pais" : "Turquía",
         "icon" : "./assents/Icons Flag/turkey.png",
         "bandera": "./assents/Flags/Turquia.png",
+        "capital":"./assents/C-Flags/C-Turquia.png",
         "coordenada": {
             "x" : "-360px",
             "y" : "24px"
@@ -94,6 +103,7 @@ const country =
         "pais" : "Australia",
         "icon" : "./assents/Icons Flag/australia.png",
         "bandera": "./assents/Flags/Australia.jpeg",
+        "capital":"./assents/C-Flags/C-Australia.png",
         "coordenada": {
             "x" : "-630px",
             "y" : "-145px"
@@ -133,6 +143,9 @@ Country.forEach( element =>{
         document.getElementById('Content-Flag').style.opacity = '1'
         document.getElementById('Content-Flag').style.background= `url(${country[pos].bandera})`
         document.getElementById('Content-Flag').style.backgroundSize= 'cover'
+        document.getElementById('C-Content-Flag').style.opacity = '1'
+        document.getElementById('C-Content-Flag').style.background =`url(${country[pos].capital})`
+        document.getElementById('C-Content-Flag').style.backgroundSize = 'cover'
         document.getElementById('Content-Container').innerHTML = InfoVerifc(country[pos].pais)
         document.getElementById('Wrapper').classList.add("W-active")
         setTimeout(()=>{
@@ -140,6 +153,7 @@ Country.forEach( element =>{
             document.getElementById('loader-container').style.display = 'none'
             document.getElementById('Content-Container').classList.remove("inSide")
             document.getElementById('Content-Flag').style.opacity = '0'
+            document.getElementById('C-Content-Flag').style.opacity = '0'
             document.getElementById('Content-Container').innerHTML = ''
             document.getElementById('Wrapper').classList.remove("W-active")
             Country.forEach(element =>{
