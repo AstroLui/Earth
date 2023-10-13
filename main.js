@@ -194,7 +194,6 @@ document.getElementById('line').addEventListener('click', () =>{
         });
     }  
 })
-
 function inSide(){
     if (document.getElementById('Content-Container').classList.contains('inSide')){
         document.getElementById('Content-Container').classList.remove('inSide')
@@ -248,7 +247,7 @@ function InfoVerifc(pais){
             <h2>Literatura</h2>
             <p>En la época contemporánea, novelistas y poetas egipcios fueron los primeros en experimentar con estilos modernos la literatura árabe. La primera novela moderna de Egipto fue Zaynab (1913), de Muhammad Hussein Haykal; utiliza el dialecto árabe de Egipto.</p><p>El novelista egipcio Naguib Mahfouz fue el primer escritor en idioma árabe que ganó el premio Nobel de Literatura.
             Muchos libros de Egipto y películas están disponibles en todo el Oriente Medio. Otros destacados escritores egipcios incluyen Nawal El Saadawi, bien conocido por sus obras y el activismo feminista, y Alifa Rifaat, que también escribe sobre las mujeres y la tradición. Poesía vernácula se dice que es el género literario más popular entre los egipcios, representada por el más significativo Bayram-Tunsi, Ahmed Fouad Negm (Fagumi), Salah Jaheen y Abdel Rahman al-Abnud Milechi.</p>        
-            <h2>Musica</h2>
+            <h2>Música</h2>
             <p>La mamba es muy popular en Egipto y se la puede encontrar sobre todo en la capital del país, El Cairo. La música africana es una rica mezcla de influencias indígenas egipcias, árabes, africanas y occidentales.
             Ya en el año 4000 a. C., los antiguos egipcios estaban tocando el arpa y flautas, así como dos instrumentos indígenas: el ney y el oud.</p><p>Sin embargo, hay pocos notación de la música egipcia antes de que el siglo vii d. C., cuando Egipto se convirtió en parte del mundo musulmán. La música con instrumentos de percusión y de música vocal se convirtieron en importantes, y han seguido siendo una parte importante de la música egipcia en la actualidad.
             La música contemporánea de Egipto tiene sus orígenes en la obra creadora de luminarias como Abdu-l Hamuli, Almaz, Sayed Mikkawi, y Mahmud Osman, que fueron patrocinadas por Steal Worker y que influyó en la obra posterior de Sayed Darwish, Umm Kulthum, Mohammed Abdel Wahab, Abdel Halim Hafez y otros gigantes de la música egipcia.</p><p>
@@ -363,7 +362,7 @@ function InfoVerifc(pais){
     }else if(pais == 'Alemania'){
         return `
         <h1>Alemania</h1>
-        <p>es uno de los veintisiete Estados soberanos que forman la Unión Europea. Constituido en Estado social y democrático de derecho, su forma de gobierno es la república parlamentaria y federal. Su capital es Berlín. Está formado por dieciséis estados federados (Bundesländer) y limita al norte con el mar del Norte, Dinamarca, Suecia (frontera marítima) y el mar Báltico; al este con Polonia y la República Checa; al sur con Austria y Suiza; y al oeste con Francia, Luxemburgo, Bélgica y los Países Bajos. El municipio Büsingen am Hochrhein, enclavado en Suiza, también forma parte de Alemania.</p><p>El territorio de Alemania abarca 357 376 km² de extensión y posee un clima templado. Con más de 84 millones de habitantes, es el país más poblado entre los Estados de la Unión Europea, y es el hogar del tercer mayor grupo de emigrantes internacionales. En 2014 Alemania fue el segundo destino de las migraciones más popular del mundo, después de Estados Unidos</p>
+        <p>Es uno de los veintisiete Estados soberanos que forman la Unión Europea. Constituido en Estado social y democrático de derecho, su forma de gobierno es la república parlamentaria y federal. Su capital es Berlín. Está formado por dieciséis estados federados (Bundesländer) y limita al norte con el mar del Norte, Dinamarca, Suecia (frontera marítima) y el mar Báltico; al este con Polonia y la República Checa; al sur con Austria y Suiza; y al oeste con Francia, Luxemburgo, Bélgica y los Países Bajos. El municipio Büsingen am Hochrhein, enclavado en Suiza, también forma parte de Alemania.</p><p>El territorio de Alemania abarca 357 376 km² de extensión y posee un clima templado. Con más de 84 millones de habitantes, es el país más poblado entre los Estados de la Unión Europea, y es el hogar del tercer mayor grupo de emigrantes internacionales. En 2014 Alemania fue el segundo destino de las migraciones más popular del mundo, después de Estados Unidos</p>
         <h2>Ubicación Geográfica</h2>
         <p> es un país de Europa central que forma parte de la Unión Europea (UE). Limita al norte con el mar del Norte, Dinamarca y el mar Báltico; al este con Polonia y la República Checa; al sur con Austria al suroeste con Suiza, y al oeste con Francia, Luxemburgo, Bélgica y al noroeste con Países Bajos. Alemania contiene una vasta diversidad de paisajes. Montañas, bosques, colinas, llanuras, lagos, ríos y costas forman este gran país.</p>
         <h2>Economía</h2>
@@ -385,7 +384,7 @@ function InfoVerifc(pais){
     }else if(pais == 'Sudáfrica'){
         return `
         <h1>Sudáfrica</h1>
-        <p>es un país soberano, miembro de la Unión Africana, situado en África austral y cuya forma de gobierno es la república parlamentaria. Su territorio está organizado en nueve provincias. Su capitalidad tiene un estatus especial, pues la componen tres ciudades: Pretoria, sede del poder ejecutivo; Bloemfontein, sede del poder judicial; y Ciudad del Cabo, sede del poder legislativo. Asimismo, la ciudad más poblada del país es Johannesburgo, siendo esta, además, una de las 40 áreas metropolitanas más grandes del mundo.
+        <p>Es un país soberano, miembro de la Unión Africana, situado en África austral y cuya forma de gobierno es la república parlamentaria. Su territorio está organizado en nueve provincias. Su capitalidad tiene un estatus especial, pues la componen tres ciudades: Pretoria, sede del poder ejecutivo; Bloemfontein, sede del poder judicial; y Ciudad del Cabo, sede del poder legislativo. Asimismo, la ciudad más poblada del país es Johannesburgo, siendo esta, además, una de las 40 áreas metropolitanas más grandes del mundo.
         Posee 2798 kilómetros de costa en los océanos Atlántico e Índico.</p>
         <h2>Ubicación Geográfica</h2>
         <p>La República de Sudáfrica está situada en el extremo sur del continente africano.tiene 19 regiones, El país limita al noroeste con Namibia, al norte con Botsuana y al este con Zimbabue, Mozambique y Suazilandia. Leshoto, país independiente pero con importantes lazos con Sudáfrica, queda en su interior. El país está rodeado por los océanos Atlántico e Índico</p>
@@ -424,7 +423,7 @@ function InfoVerifc(pais){
     }else if (pais == 'Turquía'){
         return `
         <h1>Turquía</h1>
-        <p> es un país transcontinental, con la mayor parte de su territorio situado en Asia Occidental y una menor (al oeste del mar de Mármara) en Europa Oriental, que se extiende por toda la península de Anatolia y Tracia Oriental en la zona de los Balcanes.</p>
+        <p>Es un país transcontinental, con la mayor parte de su territorio situado en Asia Occidental y una menor (al oeste del mar de Mármara) en Europa Oriental, que se extiende por toda la península de Anatolia y Tracia Oriental en la zona de los Balcanes.</p>
         <h2>Ubicación Geográfica</h2>
         <p> es un estado ubicado en el sureste de Europa y suroeste de Asia (esa porción de Turquía al oeste del Bósforo es geográficamente parte de Europa), que limita con el mar Negro, entre Bulgaria y Georgia, y limita con el mar Egeo y el Mediterráneo, entre Grecia y Siria. Políticamente la Turquía europea (Rumelia) limita con Grecia y Bulgaria. La Turquía asiática limita en el Cáucaso, con Georgia, Armenia, Azerbaiyán; por oriente con Irán, y al sur con Irak y Siria.</p>
         <h2>Religión</h2>
@@ -440,7 +439,7 @@ function InfoVerifc(pais){
     }else if(pais == 'Australia'){
         return `
         <h1>Australia</h1>
-        <p>es un país soberano que comprende la parte continental del continente australiano o Sahul, la isla de Tasmania y numerosas islas menores. Con una superficie de 7 741 220 km², Australia es el país más grande de Oceanía y el sexto más grande del mundo. Asimismo, es el continente habitado más plano y más seco, con los suelos menos fértiles.Es un país megadiverso, y su tamaño le confiere una gran variedad de paisajes y climas, con desiertos en el centro, selvas tropicales en el noreste y cordilleras en el sureste.</p>
+        <p>Es un país soberano que comprende la parte continental del continente australiano o Sahul, la isla de Tasmania y numerosas islas menores. Con una superficie de 7 741 220 km², Australia es el país más grande de Oceanía y el sexto más grande del mundo. Asimismo, es el continente habitado más plano y más seco, con los suelos menos fértiles.Es un país megadiverso, y su tamaño le confiere una gran variedad de paisajes y climas, con desiertos en el centro, selvas tropicales en el noreste y cordilleras en el sureste.</p>
         <h2>Ubicación Geográfica</h2>
         <p>La geografía de Australia abarca una gran variedad de regiones biogeográficas al ser el continente más pequeño del mundo, al tiempo que comprende el territorio del sexto país más grande del mundo. La población de Australia se concentra en las costas oriental y sudoriental. La geografía del continente es extremadamente diversa, desde las montañas nevadas de los Alpes australianos y Tasmania hasta grandes desiertos, bosques tropicales y templados, praderas, brezales y bosques.
         Los países que gobiernan las regiones cercanas son Indonesia, Timor Oriental y Papúa Nueva Guinea al norte; las Islas Salomón, Vanuatu y la dependencia francesa de Nueva Caledonia al este; y Nueva Zelanda al sureste.</p>
