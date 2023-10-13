@@ -311,15 +311,15 @@ body{
     }
     .Wrapper{
         top: 50px;
-        left: 500px;
-        transform: scale(0.9);
+        left: 440px;
+        transform: scale(0.83);
     }
     .W-active{
-        left: 265px;
+        left: 280px;
         transform: scale(0.75);
     }
     .Nav-aside{
-        width: 380px;
+        width: 350px;
         height: 60px;
         top: 50px;
     }
