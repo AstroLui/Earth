@@ -175,7 +175,7 @@ Country.forEach( element =>{
                     document.getElementById('ping').classList.remove('move')
                 }
             })
-        }, 50000)
+        }, 10000)
     })
 })
     
